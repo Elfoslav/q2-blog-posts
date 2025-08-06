@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+%active-link {
+  @apply
+    pb-1
+    border-b-2
+    border-transparent
+    hover:border-[var(--header-border-color)]
+    transition
+    duration-200;
+}
+
+.header {
+  @apply
+    relative
+    h-150
+    bg-[url('/images/header-img.jpg')]
+    bg-cover
+    bg-center
+    text-white;
+
+  .header-links {
+    @apply
+      flex
+      gap-8;
+
+    .header-link {
+      font-family: var(--font-roboto);
+
+      @extend %active-link;
+
+      @apply
+        font-bold
+        text-[12px];
+
+      &:first-child {
+        @apply px-1;
+      }
+
+      &.active {
+        @extend %active-link;
+        @apply border-[var(--header-border-color)]
+      }
+    }
+  }
+}

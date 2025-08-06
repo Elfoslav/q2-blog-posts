@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Rename `.env.example` to `.env.development` and add correct API_TOKEN
+
 First, run the development server:
 
 ```bash

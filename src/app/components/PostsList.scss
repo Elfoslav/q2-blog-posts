@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+%author-style {
+  @apply
+    text-[12px]
+    text-[#6C757D]
+    my-4;
+}
+
+.posts-list {
+  @apply
+    grid
+    gap-4
+    grid-cols-1
+    sm:grid-cols-2
+    lg:grid-cols-4;
+
+  .post-item {
+    @apply
+      w-full
+      relative
+      block
+      transition-all
+      duration-300
+      hover:scale-[1.02];
+
+    .author {
+      @extend %author-style;
+    }
+
+    .post-image {
+      @apply
+        object-cover
+        w-full
+        md:w-[310px]
+        h-[280px]
+        overflow-hidden
+        rounded
+        shadow;
+    }
+
+    .title {
+      @apply
+        text-[18px]
+        font-bold
+        text-[#495057]
+        line-clamp-2
+        leading-tight
+        min-h-[3rem]
+        my-4;
+    }
+
+    .content {
+      @extend %author-style;
+      @apply
+        line-clamp-3;
+    }
+
+    .hover-overlay {
+      @apply
+        absolute
+        h-[280px]
+        inset-0
+        bg-gray-100
+        opacity-0
+        group-hover:opacity-60
+        transition-opacity
+        duration-300
+        z-10
+        rounded
+    }
+  }
+}
