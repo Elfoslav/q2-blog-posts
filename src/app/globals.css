@@ -94,6 +94,14 @@ body {
     px-15;
 }
 
+.inner-footer {
+  @apply
+    container
+    mx-auto
+    px-4
+    lg:px-0;
+}
+
 /**
  Animations
  */

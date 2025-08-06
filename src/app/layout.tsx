@@ -36,7 +36,7 @@ export default function RootLayout({
 				</NotificationProvider>
 
 				<footer className="w-full bg-[#343A40] text-[#E5E5E5] py-8 font-bold text-[14px]">
-					<div className="container mx-auto">
+					<div className="inner-footer">
 						<a
 							className="hover:underline hover:underline-offset-4"
 							href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
